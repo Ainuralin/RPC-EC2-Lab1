@@ -1,0 +1,10 @@
+# Required Python version
+python>=3.8
+
+# Standard library modules used:
+# - socket
+# - json  
+# - time
+# - uuid
+# - threading
+# - logging
