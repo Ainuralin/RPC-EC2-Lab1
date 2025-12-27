@@ -26,18 +26,28 @@ This project implements a minimal RPC (Remote Procedure Call) system with client
 ```bash
 sudo apt update
 sudo apt install python3 -y
+```
 
-### 3. How to Run
+### 3. Connect to Your Instances
+For server (replace with your server IP):
+```bash
+ssh -i your-key.pem ubuntu@YOUR_SERVER_IP
+```
+For client (replace with your client IP):
+```bash
+ssh -i your-key.pem ubuntu@YOUR_CLIENT_IP
+```
+### 4. How to Run
 1. On server EC2: `python3 server.py`
 2. On client EC2: `python3 client.py`
-
+```
 | Method   | Description                       | Example Parameters |
 | -------- | --------------------------------- | ------------------ |
 | add      | Add two numbers                   | {"a": 5, "b": 7}   |
 | get_time | Return server timestamp           | {}                 |
 | slow_add | Add numbers with artificial delay | {"a": 3, "b": 4}   |
 | unknown  | Any other string                  | {}                 |
-
+```
 
 ## Features Demonstrated
 - JSON marshalling
